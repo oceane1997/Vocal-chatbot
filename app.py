@@ -54,7 +54,7 @@ def build_processed(sentences: list[str]):
     """Crée les ensembles de tokens (pour similarité Jaccard)."""
     return [set(preprocess(s)) for s in sentences]
 
-st.header("Étape 2/6 — Corpus & prétraitement")
+st.header("Corpus & prétraitement")
 full_text, sentences, err = load_corpus("corpus.txt")
 if err:
     st.error(err)
@@ -191,7 +191,7 @@ def reply_from_text_or_audio(
 # ============================
 # Étape 5 — Interface : Texte OU Audio + Micro navigateur
 # ============================
-st.header("Étape 5/6 — Pose ta question (texte OU audio)")
+st.header("Pose ta question (texte OU audio)")
 
 # Paramètres
 colA, colB = st.columns([1, 1])
